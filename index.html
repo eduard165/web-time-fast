@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Fast - Rastreo de Envíos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header id="header-container">
+            <h1>Time-Fast</h1>
+            <p>Rastreo de Paquetes en Tiempo Real</p>
+        </header>
+
+        <main id="main-content">
+            <h2>Consulta tu Envío</h2>
+
+            <div id="tracking-info">
+                <label for="tracking-number">Ingresa tu número de guía:</label>
+                <input type="text" id="tracking-number" placeholder="Número de guía">
+                <button id="search-btn">Buscar</button>
+
+                <div id="info-envio">
+                    <div class="info-column" id="info-cliente">
+                        <h3>Información del Cliente</h3>
+                    </div>
+                
+                    <div class="info-column" id="info-conductor">
+                        <h3>Información del Conductor</h3>
+                    </div>
+                </div>
+                <div class="info-column" id="info-envio-detalle">
+                    <h3>Detalles del los Envíos</h3>
+                </div>
+        </main>
+
+        <footer id="footer-container">
+            <p>&copy; 2024 Time-Fast. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+    <script src="js/traking.js"></script>
+
+</body>
+
+</html>

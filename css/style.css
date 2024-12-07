@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #070707;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+    --header-footer-bg: #34495e;
+    --button-hover: #2980b9;
+    --input-border: #bdc3c7;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilización general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header y Footer */
+#header-container, #footer-container {
+    background-color: var(--header-footer-bg);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header-container h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 10px;
+}
+
+#header-container p {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+}
+
+#footer-container {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* Main content */
+#main-content {
+    flex-grow: 1;
+    padding: clamp(20px, 5vw, 40px);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px clamp(10px, 2vw, 20px);
+}
+
+/* Botones */
+#search-btn, #back-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover, #back-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Input de número de guía */
+#tracking-number {
+    width: 100%;
+    padding: 10px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Centrado de títulos */
+h2, h3 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Información del envío */
+#tracking-info {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: clamp(15px, 3vw, 20px);
+    margin-bottom: 30px;
+}
+
+/* Sección de información de cliente y conductor */
+#info-envio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo individual para cada columna */
+.info-column {
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+/* Distribución horizontal en dispositivos medianos y grandes */
+@media (min-width: 768px) {
+    .info-column {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+/* Distribución vertical en pantallas pequeñas */
+@media (max-width: 480px) {
+    #info-envio {
+        flex-direction: column;
+    }
+  
+    .info-column {
+        margin-bottom: 15px;
+    }
+}
+
+/* Botón regresar */
+#back-button {
+    display: block;
+    max-width: 200px;
+    margin: 20px auto 0;
+}
+
+/* Footer */
+#footer-container {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    text-align: center;
+}
