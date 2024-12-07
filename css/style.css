@@ -1,11 +1,11 @@
 :root {
     --primary-color: #070707;
     --secondary-color: #2c3e50;
-    --background-color: #ecf0f1;
-    --text-color: #333;
-    --header-footer-bg: #34495e;
+    --background-color: #f4f4f4;
+    --text-color: #615e5e;
+    --header-footer-bg: #053e7c;
     --button-hover: #2980b9;
-    --input-border: #bdc3c7;
+    --input-border: #2ea0ed;
 }
 
 /* Reset básico */
