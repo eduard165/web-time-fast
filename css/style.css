@@ -8,14 +8,12 @@
     --input-border: #2ea0ed;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilización general */
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
@@ -23,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* Contenedor principal */
 #container {
     max-width: 1200px;
     margin: 0 auto;
@@ -32,7 +29,6 @@ body {
     flex-direction: column;
 }
 
-/* Header y Footer */
 #header-container, #footer-container {
     background-color: var(--header-footer-bg);
     color: white;
@@ -53,7 +49,6 @@ body {
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-/* Main content */
 #main-content {
     flex-grow: 1;
     padding: clamp(20px, 5vw, 40px);
@@ -63,7 +58,6 @@ body {
     margin: 20px clamp(10px, 2vw, 20px);
 }
 
-/* Botones */
 #search-btn, #back-button {
     display: inline-block;
     width: 100%;
@@ -81,7 +75,6 @@ body {
     background-color: var(--button-hover);
 }
 
-/* Input de número de guía */
 #tracking-number {
     width: 100%;
     padding: 10px;
@@ -89,15 +82,14 @@ body {
     border: 1px solid var(--input-border);
     border-radius: 4px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
-/* Centrado de títulos */
 h2, h3 {
     text-align: center;
     color: var(--primary-color);
 }
 
-/* Información del envío */
 #tracking-info {
     background-color: var(--background-color);
     border-radius: 8px;
@@ -105,14 +97,12 @@ h2, h3 {
     margin-bottom: 30px;
 }
 
-/* Sección de información de cliente y conductor */
 #info-envio {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-/* Estilo individual para cada columna */
 .info-column {
     padding: 15px;
     background-color: var(--background-color);
@@ -122,14 +112,12 @@ h2, h3 {
     text-align: center;
 }
 
-/* Distribución horizontal en dispositivos medianos y grandes */
 @media (min-width: 768px) {
     .info-column {
         flex: 1 1 calc(33.333% - 20px);
     }
 }
 
-/* Distribución vertical en pantallas pequeñas */
 @media (max-width: 480px) {
     #info-envio {
         flex-direction: column;
@@ -140,14 +128,12 @@ h2, h3 {
     }
 }
 
-/* Botón regresar */
 #back-button {
     display: block;
     max-width: 200px;
     margin: 20px auto 0;
 }
 
-/* Footer */
 #footer-container {
     font-size: clamp(0.8rem, 2vw, 1rem);
     text-align: center;
